@@ -62,34 +62,70 @@ def inputSetzenP1():
 
     if SpalteInput == "1":
         if ZeileInput in ("A", "a"):
-            board_raw[0] = "X"
-            gewinnerkennungP1()
+            if board_raw[0] == " ":
+                board_raw[0] = "X"
+                gewinnerkennungP1()
+            else:
+                print("Feld ist schon belegt, bitte neue Eingabe!")
+                spaltenInputP1()
         elif ZeileInput in ("B", "b"):
-            board_raw[3] = "X"
-            gewinnerkennungP1()
+            if board_raw[3] == " ":
+                board_raw[3] = "X"
+                gewinnerkennungP1()
+            else:
+                print("Feld ist schon belegt, bitte neue Eingabe!")
+                spaltenInputP1()
         elif ZeileInput in ("C", "c"):
-            board_raw[6] = "X"
-            gewinnerkennungP1()
+            if board_raw[6] == " ":
+                board_raw[6] = "X"
+                gewinnerkennungP1()
+            else:
+                print("Feld ist schon belegt, bitte neue Eingabe!")
+                spaltenInputP1()
     elif SpalteInput == "2":
         if ZeileInput in ("A", "a"):
-            board_raw[1] = "X"
-            gewinnerkennungP1()
+            if board_raw[1] == " ":
+                board_raw[1] = "X"
+                gewinnerkennungP1()
+            else:
+                print("Feld ist schon belegt, bitte neue Eingabe!")
+                spaltenInputP1()
         elif ZeileInput in ("B", "b"):
-            board_raw[4] = "X"
-            gewinnerkennungP1()
+            if board_raw[4] == " ":
+                board_raw[4] = "X"
+                gewinnerkennungP1()
+            else:
+                print("Feld ist schon belegt, bitte neue Eingabe!")
+                spaltenInputP1()
         elif ZeileInput in ("C", "c"):
-            board_raw[7] = "X"
-            gewinnerkennungP1()
+            if board_raw[7] == " ":
+                board_raw[7] = "X"
+                gewinnerkennungP1()
+            else:
+                print("Feld ist schon belegt, bitte neue Eingabe!")
+                spaltenInputP1()
     elif SpalteInput == "3":
         if ZeileInput in ("A", "a"):
-            board_raw[2] = "X"
-            gewinnerkennungP1()
+            if board_raw[2] == " ":
+                board_raw[2] = "X"
+                gewinnerkennungP1()
+            else:
+                print("Feld ist schon belegt, bitte neue Eingabe!")
+                spaltenInputP1()
         elif ZeileInput in ("B", "b"):
-            board_raw[5] = "X"
-            gewinnerkennungP1()
+            if board_raw[5] == " ":
+                board_raw[5] = "X"
+                gewinnerkennungP1()
+            else:
+                print("Feld ist schon belegt, bitte neue Eingabe!")
+                spaltenInputP1()
         elif ZeileInput in ("C", "c"):
-            board_raw[8] = "X"
-            gewinnerkennungP1()
+            if board_raw[8] == " ":
+                board_raw[8] = "X"
+                gewinnerkennungP1()
+            else:
+                print("Feld ist schon belegt, bitte neue Eingabe!")
+                spaltenInputP1()
     else:
         print("Error 1")
         menu()
@@ -149,34 +185,70 @@ def inputSetzenP2():
 
     if SpalteInput == "1":
         if ZeileInput in ("A", "a"):
-            board_raw[0] = "O"
-            gewinnerkennungP2()
+            if board_raw[0] == " ":
+                board_raw[0] = "O"
+                gewinnerkennungP2()
+            else:
+                print("Feld ist schon belegt, bitte neue Eingabe!")
+                spaltenInputP2()
         elif ZeileInput in ("B", "b"):
-            board_raw[3] = "O"
-            gewinnerkennungP2()
+            if board_raw[3] == " ":
+                board_raw[3] = "O"
+                gewinnerkennungP2()
+            else:
+                print("Feld ist schon belegt, bitte neue Eingabe!")
+                spaltenInputP2()
         elif ZeileInput in ("C", "c"):
-            board_raw[6] = "O"
-            gewinnerkennungP2()
+            if board_raw[6] == " ":
+                board_raw[6] = "O"
+                gewinnerkennungP2()
+            else:
+                print("Feld ist schon belegt, bitte neue Eingabe!")
+                spaltenInputP2()
     elif SpalteInput == "2":
         if ZeileInput in ("A", "a"):
-            board_raw[1] = "O"
-            gewinnerkennungP2()
+            if board_raw[1] == " ":
+                board_raw[1] = "O"
+                gewinnerkennungP2()
+            else:
+                print("Feld ist schon belegt, bitte neue Eingabe!")
+                spaltenInputP2()
         elif ZeileInput in ("B", "b"):
-            board_raw[4] = "O"
-            gewinnerkennungP2()
+            if board_raw[4] == " ":
+                board_raw[4] = "O"
+                gewinnerkennungP2()
+            else:
+                print("Feld ist schon belegt, bitte neue Eingabe!")
+                spaltenInputP2()
         elif ZeileInput in ("C", "c"):
-            board_raw[7] = "O"
-            gewinnerkennungP2()
+            if board_raw[7] == " ":
+                board_raw[7] = "O"
+                gewinnerkennungP2()
+            else:
+                print("Feld ist schon belegt, bitte neue Eingabe!")
+                spaltenInputP2()
     elif SpalteInput == "3":
         if ZeileInput in ("A", "a"):
-            board_raw[2] = "O"
-            gewinnerkennungP2()
+            if board_raw[2] == " ":
+                board_raw[2] = "O"
+                gewinnerkennungP2()
+            else:
+                print("Feld ist schon belegt, bitte neue Eingabe!")
+                spaltenInputP2()
         elif ZeileInput in ("B", "b"):
-            board_raw[5] = "O"
-            gewinnerkennungP2()
+            if board_raw[5] == " ":
+                board_raw[5] = "O"
+                gewinnerkennungP2()
+            else:
+                print("Feld ist schon belegt, bitte neue Eingabe!")
+                spaltenInputP2()
         elif ZeileInput in ("C", "c"):
-            board_raw[8] = "O"
-            gewinnerkennungP2()
+            if board_raw[8] == " ":
+                board_raw[8] = "O"
+                gewinnerkennungP2()
+            else:
+                print("Feld ist schon belegt, bitte neue Eingabe!")
+                spaltenInputP2()
     else:
         print("Error 2")
         menu()
