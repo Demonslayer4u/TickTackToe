@@ -96,21 +96,21 @@ def inputSetzenP1():
 
 def gewinnerkennungP1():
     global board_raw
-    if board_raw[0] and board_raw[1] and board_raw[2] == "X":
+    if board_raw[0] == "X" and board_raw[1] == "X" and board_raw[2] == "X":
         winnerP1()
-    elif board_raw[3] and board_raw[4] and board_raw[5] == "X":
+    elif board_raw[3] == "X" and board_raw[4] == "X" and board_raw[5] == "X":
         winnerP1()
-    elif board_raw[6] and board_raw[7] and board_raw[8] == "X":
+    elif board_raw[6] == "X" and board_raw[7] == "X" and board_raw[8] == "X":
         winnerP1()
-    elif board_raw[0] and board_raw[3] and board_raw[6] == "X":
+    elif board_raw[0] == "X" and board_raw[3] == "X" and board_raw[6] == "X":
         winnerP1()
-    elif board_raw[1] and board_raw[4] and board_raw[7] == "X":
+    elif board_raw[1] == "X" and board_raw[4] == "X" and board_raw[7] == "X":
         winnerP1()
-    elif board_raw[2] and board_raw[5] and board_raw[8] == "X":
+    elif board_raw[2] == "X" and board_raw[5] == "X" and board_raw[8] == "X":
         winnerP1()
-    elif board_raw[0] and board_raw[4] and board_raw[8] == "X":
+    elif board_raw[0] == "X" and board_raw[4] == "X" and board_raw[8] == "X":
         winnerP1()
-    elif board_raw[2] and board_raw[4] and board_raw[6] == "X":
+    elif board_raw[2] == "X" and board_raw[4] == "X" and board_raw[6] == "X":
         winnerP1()
     elif " " not in board_raw:
         print("Unentschieden!")
@@ -183,21 +183,21 @@ def inputSetzenP2():
 
 def gewinnerkennungP2():
     global board_raw
-    if board_raw[0] and board_raw[1] and board_raw[2] == "O":
+    if board_raw[0] == "X" and board_raw[1] == "X" and board_raw[2] == "X":
         winnerP2()
-    elif board_raw[3] and board_raw[4] and board_raw[5] == "O":
+    elif board_raw[3] == "X" and board_raw[4] == "X" and board_raw[5] == "X":
         winnerP2()
-    elif board_raw[6] and board_raw[7] and board_raw[8] == "O":
+    elif board_raw[6] == "X" and board_raw[7] == "X" and board_raw[8] == "X":
         winnerP2()
-    elif board_raw[0] and board_raw[3] and board_raw[6] == "O":
+    elif board_raw[0] == "X" and board_raw[3] == "X" and board_raw[6] == "X":
         winnerP2()
-    elif board_raw[1] and board_raw[4] and board_raw[7] == "O":
+    elif board_raw[1] == "X" and board_raw[4] == "X" and board_raw[7] == "X":
         winnerP2()
-    elif board_raw[2] and board_raw[5] and board_raw[8] == "O":
+    elif board_raw[2] == "X" and board_raw[5] == "X" and board_raw[8] == "X":
         winnerP2()
-    elif board_raw[0] and board_raw[4] and board_raw[8] == "O":
+    elif board_raw[0] == "X" and board_raw[4] == "X" and board_raw[8] == "X":
         winnerP2()
-    elif board_raw[2] and board_raw[4] and board_raw[6] == "O":
+    elif board_raw[2] == "X" and board_raw[4] == "X" and board_raw[6] == "X":
         winnerP2()
     else: turnP1()
 
