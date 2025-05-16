@@ -40,21 +40,13 @@ def menu():
 def turnP1():
     print(" \nSpieler 1 (X) ist dran!")
     print(get_board_con())
-    spaltenInputP1()
 
-def spaltenInputP1():
-    global SpalteInput
-    SpalteInput = input("Wo setzt du dein X? (Spalte)")
-    if SpalteInput in ("1", "2", "3"):
-        zeilenInputP1()
-    else: spaltenInputP1()
 
-def zeilenInputP1():
-    global ZeileInput
-    ZeileInput = input("Wo setzt du dein X? (Zeile)")
-    if ZeileInput in ("A", "B", "C", "a", "b", "c"):
-        inputSetzenP1()
-    else: zeilenInputP1()
+def Input():
+    input0 = input("Eingabe...")
+    input1 = input0[1]
+
+
 
 def inputSetzenP1():
     global SpalteInput
