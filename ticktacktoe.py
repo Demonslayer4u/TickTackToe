@@ -77,13 +77,12 @@ def user_input():
     global input0
     global input1
     input_raw = input(f"Setze dein {player_turn} \n")
-    if len(input_raw) == 2:
-        input0 = input_raw[0]
-        input1 = input_raw[1]
-        conversion1()
-    else:
-        print("Ungültige Eingabe")
-        user_input()
+    input_raw = input_raw[:2]
+    input0 = input_raw[0]
+    input1 = input_raw[1]
+    conversion1()
+
+
 
 def conversion1():
     global input0
@@ -152,21 +151,21 @@ def placing():
                 board_raw[0] = f"{player_turn}"
                 checking_winner()
             else:
-                print("Feld ist schon belegt, bitte neue user_input!")
+                print("Feld ist schon belegt, bitte neue Eingabe!")
                 user_input()
         elif line_input in ("B", "b"):
             if board_raw[3] == " ":
                 board_raw[3] = f"{player_turn}"
                 checking_winner()
             else:
-                print("Feld ist schon belegt, bitte neue user_input!")
+                print("Feld ist schon belegt, bitte neue Eingabe!")
                 user_input()
         elif line_input in ("C", "c"):
             if board_raw[6] == " ":
                 board_raw[6] = f"{player_turn}"
                 checking_winner()
             else:
-                print("Feld ist schon belegt, bitte neue user_input!")
+                print("Feld ist schon belegt, bitte neue Eingabe!")
                 user_input()
     elif split_input == "2":
         if line_input in ("A", "a"):
@@ -174,21 +173,21 @@ def placing():
                 board_raw[1] = f"{player_turn}"
                 checking_winner()
             else:
-                print("Feld ist schon belegt, bitte neue user_input!")
+                print("Feld ist schon belegt, bitte neue Eingabe!")
                 user_input()
         elif line_input in ("B", "b"):
             if board_raw[4] == " ":
                 board_raw[4] = f"{player_turn}"
                 checking_winner()
             else:
-                print("Feld ist schon belegt, bitte neue user_input!")
+                print("Feld ist schon belegt, bitte neue Eingabe!")
                 user_input()
         elif line_input in ("C", "c"):
             if board_raw[7] == " ":
                 board_raw[7] = f"{player_turn}"
                 checking_winner()
             else:
-                print("Feld ist schon belegt, bitte neue user_input!")
+                print("Feld ist schon belegt, bitte neue Eingabe!")
                 user_input()
     elif split_input == "3":
         if line_input in ("A", "a"):
@@ -196,21 +195,21 @@ def placing():
                 board_raw[2] = f"{player_turn}"
                 checking_winner()
             else:
-                print("Feld ist schon belegt, bitte neue user_input!")
+                print("Feld ist schon belegt, bitte neue Eingabe!")
                 user_input()
         elif line_input in ("B", "b"):
             if board_raw[5] == " ":
                 board_raw[5] = f"{player_turn}"
                 checking_winner()
             else:
-                print("Feld ist schon belegt, bitte neue user_input!")
+                print("Feld ist schon belegt, bitte neue Eingabe!")
             user_input()
         elif line_input in ("C", "c"):
             if board_raw[8] == " ":
                 board_raw[8] = f"{player_turn}"
                 checking_winner()
             else:
-                print("Feld ist schon belegt, bitte neue user_input!")
+                print("Feld ist schon belegt, bitte neue Eingabe!")
                 user_input()
     else:
         print("Ungültige Eingabe")
