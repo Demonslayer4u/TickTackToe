@@ -142,8 +142,8 @@ def checking_input():
 def placing():
     global split_input
     global line_input
-    print("split: ",split_input)
-    print("line: ",line_input)
+    #print("split: ",split_input)
+    #print("line: ",line_input)
 
     if split_input == "1":
         if line_input in ("A", "a"):
