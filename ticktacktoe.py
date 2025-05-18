@@ -100,35 +100,35 @@ def conversion1():
 
 def conversion2():
     global input1
-    global input1_ist_int
+    global input1_is_int
     #print("Conversion2...")
     try:
         input1 = int(input1)
-        input1_ist_int = True
+        input1_is_int = True
         checking_input()
     except ValueError:
         input1 = str(input1)
-        input1_ist_int = False
+        input1_is_int = False
         checking_input()
 
 def checking_input():
-    global input0_ist_int
-    global input0_ist_int
+    global input0_is_int
+    global input0_is_int
     global split_input
     global line_input
     #print("Checking_input...")
     #print(Player_turn)
 
-    if input0_ist_int == input1_ist_int:
+    if input0_is_int == input1_is_int:
         print("Ungültige Eingabe")
         user_input()
     else:
-        if input0_ist_int:
+        if input0_is_int:
             split_input = str(input0)
             line_input = str(input1)
             #print("Inp0 is int...")
             placing()
-        elif input1_ist_int:
+        elif input1_is_int:
             #print("Inp1 is int...")
             split_input = str(input1)
             line_input = str(input0)
