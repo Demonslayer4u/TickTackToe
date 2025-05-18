@@ -142,8 +142,8 @@ def checking_input():
 def placing():
     global split_input
     global line_input
-    #print("split: ",split_input)
-    #print("line: ",line_input)
+    print("split: ",split_input)
+    print("line: ",line_input)
 
     if split_input == "1":
         if line_input in ("A", "a"):
@@ -167,6 +167,9 @@ def placing():
             else:
                 print("Feld ist schon belegt, bitte neue Eingabe!")
                 user_input()
+        else:
+            print("Ungültige Eingabe")
+            user_input()
     elif split_input == "2":
         if line_input in ("A", "a"):
             if board_raw[1] == " ":
@@ -189,6 +192,9 @@ def placing():
             else:
                 print("Feld ist schon belegt, bitte neue Eingabe!")
                 user_input()
+        else:
+            print("Ungültige Eingabe")
+            user_input()
     elif split_input == "3":
         if line_input in ("A", "a"):
             if board_raw[2] == " ":
@@ -211,6 +217,9 @@ def placing():
             else:
                 print("Feld ist schon belegt, bitte neue Eingabe!")
                 user_input()
+        else:
+            print("Ungültige Eingabe")
+            user_input()
     else:
         print("Ungültige Eingabe")
         user_input()
