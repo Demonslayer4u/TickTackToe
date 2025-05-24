@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+
+
 board_raw = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 board_con = f"""   1   2   3
